@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARC Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- works at mobile view meskipun gak pake mediaquery -->
+
+<body>
+  <nav>
+    <a href="https://mail.google.com">Gmail</a>
+    <a href="https://www.google.com/imghp">Images</a>
+    <i onclick="showDropdown()" style="font-size:24px" class="fa">&#xf0c9;</i>
+    <img src="./assets/bussiness-man.png" alt="profile-thumbnail">
+  </nav>
+  <!-- Nambar dropdown kayak yang ada di google -->
+  <div class="dropdown non-active" id="dropdown">
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+    <i class="fa fa-futbol-o" style="font-size:36px"></i>
+  </div>
+  <script src="index.js"></script>
+  <form action="https://google.com/search">
+    <div class="logo-wrapper">
+        <img class="main-logo" src="./assets/arc-search-logo.webp" alt="main-logo">
+    </div>
+    <div class="search-form">
+        <input type="text" name="q">
+        <img src="./assets/icons/search-24px.svg" alt="search-icon">
+        <img src="./assets/icons/mic-24px.svg" alt="mic-icon">
+    </div>
+    <div class="sub-btn">
+      <button type="submit">Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+    <p style="font-size: small;align-self:center;">ARC offered in: <a href="https://arc.itb.ac.id">Institut Teknologi Bandung</a></p>
+  </form>
+</body>
+
+</html>

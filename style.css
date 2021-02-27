@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Arial", sans-serif;
+}
+body{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    place-items: center;
+}
+nav{
+    height:70px;
+    position: absolute;
+    top:0;
+    right:0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding:2vw;
+    font-size: small;
+}
+nav > *{
+    margin:5px;
+    color:#333;
+}
+
+nav a:hover{
+    border-bottom: solid 1px #222;
+}
+
+a{
+    text-decoration: none;
+}
+nav img{
+    height:5vh;
+    width:5vh;
+    background-color:#333;
+    border-radius:50%;
+}
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo{
+    height: 92px;
+    width:380px;
+    margin-bottom: 40px;
+}
+
+input:hover{
+    box-shadow:0 0 2.5px 2.5px rgba(138, 138, 138, 0.17);
+}
+
+input:focus{
+    box-shadow:0 0 2.5px 2.5px rgba(138, 138, 138, 0.17);
+}
+
+.sub-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.sub-btn button{
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.sub-btn button:hover{
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.17);
+}
+
+input:focus{
+    outline-width: 0;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 582px;
+    width: 90%;
+}
+
+img[alt="search-icon"]{
+    position:absolute;
+    top: 11px;
+    left: 20px;
+    width: 20px;
+}
+img[alt="mic-icon"]{
+    position:absolute;
+    top: 11px;
+    right: 20px;
+    width: 20px;
+}
+
+.fa{
+    padding: 5px;
+}
+
+.fa:hover{
+    cursor: pointer;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+}
+
+.dropdown{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+    top: 70px;
+    right: 70px;
+    border-radius: 5px;
+    max-width: 250px;
+    max-height: 250px;
+    background-color: white;
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.17);
+    overflow: scroll;
+    z-index: 10;
+}
+
+.non-active{
+    display: none;
+}
+
+input{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+    width:100%;
+    height: 20px;
+    border-radius:25px;
+    padding: 20px;
+    border: 1px solid #dfe1e5;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
